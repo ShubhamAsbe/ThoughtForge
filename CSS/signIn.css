@@ -1,0 +1,150 @@
+body, html {
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mainDiv{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.leftDiv{
+    width: 30%;
+    height: 100vh;
+    background-color: #edecec;
+}
+
+.rightDiv{
+    width: 60%;
+    height: 100vh;
+}
+
+.leftDiv_icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.left_Div_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.leftDiv_Sign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20%;
+    font-size: medium;
+}
+
+.leftDiv_Img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.leftDiv_Img img{
+    background-color: transparent; 
+    width: 65%;
+    height: 65%;
+}
+
+.rightDiv{
+    width: 70%;
+    height: 100vh;
+}
+
+.rightDiv_Top_Button{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin-right: 7%;
+    margin-top: 3%;
+}
+
+.rightDiv_Signin_Form {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */ /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    height: 100%;
+    margin-top: 15%; /* Ensure the container takes the full height of its parent */
+}
+
+.rightDiv_Signin_Form_Title{
+    font-size: 2vw;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.rightDiv_Signin_Form_Option {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw; /* Center the items horizontally */
+}
+
+.rightDiv_Signin_Form_Option img {
+    margin: 0 4vw; /* Add some spacing between the images */
+}
+
+.rightDiv_Signin_Form_Or{
+    font-size: larger;
+    font-weight: bold;
+    margin: 1vw 0;
+}
+
+.rightDiv_Signin_Form_Input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightDiv_Signin_Form_Input div {
+    margin-bottom: 10px;
+}
+
+.rightDiv_Signin_Form_Input input {
+    width: 25vw; 
+    padding: 1vw; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease; 
+}
+
+.rightDiv_Signin_Form_Input input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle box shadow on focus */
+}
+
+.rightDiv_Signin_Form_FP{
+    margin: 1vw 0 1vw 20vw;
+    font-weight: 600;
+
+}
+
+.rightDiv_Signin_Form_SignIn_Button input[type="button"] {
+    background-color: #000; /* Black background color */
+    color: #fff; /* White text color */
+    padding: 0.7vw 2vw; /* Adjust padding for better appearance */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Add rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.rightDiv_Signin_Form_SignIn_Button input[type="button"]:hover {
+    background-color: #333; /* Darken the background color on hover */
+}
