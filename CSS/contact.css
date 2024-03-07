@@ -1,0 +1,167 @@
+body,
+html {
+  overflow: scroll;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.NavBar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  padding: 0.7% 2%;
+  box-shadow: 0 0.1px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  background-color: #ffffff;
+}
+.logo {
+  display: flex;
+  width: 18%;
+  align-items: center;
+}
+
+.Vector_top_left {
+  margin-right: 1.2%;
+}
+
+.left_Div_name {
+  margin-right: 2%;
+  margin-left: 1.5%;
+  padding-bottom: 0.4%;
+  font-size: 27px;
+  color: #3c3c3c;
+  font-weight: 600;
+}
+
+.SearchBar {
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.SearchBar input {
+  width: 30vw;
+  height: 0.5vw; /* Reduce the height of the input box */
+  padding: 1vw; /* Add padding for better appearance */
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 50px; /* Add rounded corners */
+  outline: none;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Add inset shadow */
+  transition: box-shadow 0.3s ease;
+}
+.SearchBar input::placeholder {
+  text-align: center;
+}
+
+.tabs ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.tabs ul li {
+  position: relative;
+  margin: 65%;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/*************************************** switch css ********************************************/
+.switchdiv {
+  position: relative;
+  margin-left: auto;
+  margin-right: 1%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*************************************** switch end ********************************************/
+.profileimg {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+/**************************** main body ******************************/
+
+
+
+
+
+/**************************** footer ******************************/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  /* Adjust the height of the footer as needed */
+}
+
+.footer-content {
+  text-align: center; /* Center text horizontally */
+}
+
+.footer img {
+  margin-bottom: -10%; /* Adjust the spacing between the image and text */
+}
