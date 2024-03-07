@@ -109,6 +109,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .rightDiv_Signin_Form_Input div {
@@ -147,4 +148,17 @@ body, html {
 
 .rightDiv_Signin_Form_SignIn_Button input[type="button"]:hover {
     background-color: #333; /* Darken the background color on hover */
+}
+
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+.eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust the distance from the right edge of the input */
+    transform: translateY(-50%);
+    cursor: pointer;
 }

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In Page</title>
-    <link rel="stylesheet" href="../CSS/signin.css">
+    <link rel="stylesheet" href="../CSS/signIn.css">
+    <script src="../JS/signIn.js"></script>
 </head>
+
 <body>
     <div class="mainDiv">
         <div class="leftDiv">
@@ -22,11 +25,11 @@
                 <div style="font-weight: bolder; cursor: pointer;">
                     <a href="../HTML/signIn.html" style="text-decoration: none; color: black;">Sign In</a>
                 </div>
-                
+
                 <div style="cursor: pointer;">
                     <a href="../HTML/signUp.html" style="text-decoration: none; color: black;">Sign Up</a>
                 </div>
-                
+
             </div>
             <div class="leftDiv_Img">
                 <img src="../IMG/SVGDARK.png" alt="Thought Forge">
@@ -53,18 +56,22 @@
                     <div>
                         <input type="text" id="usernameInput" class="textInput" placeholder="Enter your Email">
                     </div>
-                    <div>
+                    <div class="password-container">
                         <input type="password" id="passwordInput" class="textInput" placeholder="Enter your password">
+                        <div class="eye-icon" onclick="togglePasswordVisibility()">
+                            <img src="../IMG/EyeClose.png" alt="Toggle Password Visibility" width="20" height="20">
+                        </div>
                     </div>
                 </div>
                 <div class="rightDiv_Signin_Form_FP" style="cursor: pointer;">
                     Forgot Password
                 </div>
                 <div class="rightDiv_Signin_Form_SignIn_Button">
-                    <input type="button" value="Sign In">
-                </div>  
+                    <input type="button" value="Sign In" onclick="signIn()">
+                </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
