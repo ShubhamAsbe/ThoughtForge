@@ -151,17 +151,3 @@ input:checked + .slider:before {
 
 
 /**************************** footer ******************************/
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Center items vertically */
-  /* Adjust the height of the footer as needed */
-}
-
-.footer-content {
-  text-align: center; /* Center text horizontally */
-}
-
-.footer img {
-  margin-bottom: -10%; /* Adjust the spacing between the image and text */
-}
