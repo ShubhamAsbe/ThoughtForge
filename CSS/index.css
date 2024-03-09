@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif ;
+    background: #fff;
+}
+
+/* nav-bar section  */
+
+.navbar {
+    display: flex;
+    color: black;
+    height: 60;
+    margin-left: 5.5556vh;
+    margin-top: 1.9444vh;
+    align-items: center;
+}
+
+.blog-website-name {
+    margin-left: 5vh;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.9vh;
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 0.7vh;
+    height: 4.3vh;
+    width: 60vh;
+    background-color: #f3f3f3;
+    margin-left: 15vh;
+}
+
+.search-bar img {
+    margin-left: 1vh;
+    background: #f3f3f3;
+}
+
+.search-bar input {
+    height: 3.5vh;
+    width: 54vh;
+    border: none;
+    outline: none;
+    background: #f3f3f3;
+}
+
+.contact{
+    margin-left: 18vh;
+    font-weight: 500;
+}
+
+.contact:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.about {
+    margin-left: 10vh;
+    margin-right: 15vh;
+    font-weight: 500;
+}
+
+.about:hover {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.toggle-container {
+    display: inline-block;
+  }
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+.toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+
+.toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+input:checked + .toggle-slider {
+    background-color: #2196F3;
+  }
+
+input:focus + .toggle-slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+  }
+
+input {
+    display: none;
+  }
+
+#user-icon {
+    margin-left: 8vh;
+    cursor: pointer;
+}
+
+.separate-line {
+    margin-top: 1vh;
+}
+
+/* Hero section */
+
+.hero-section {
+    display: flex;
+}
+
+.user-section-info {
+    background: #D9D9D9;
+    height: 87.2vh;
+    width: 47vh;
+    border-radius: 2%;
+}
+
+.user-profile-name {
+    display: flex;
+    gap: 2vh;
+    margin-left: 2vh;
+    margin-top: 3vh;
+    padding: 1vh;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+.user-profile-name img {
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.user-profile-name h1 {
+
+    background-color: #D9D9D9;
+}
+
+.new-btn {
+    background-color: #000;
+    border-radius: 2vh;
+    margin-top: 2.5vh ;
+    width: 25%;
+    color: white;
+    height: 3vh;
+    margin-left: 28.8vh;
+}
+
+.new-btn:hover {
+    background-color: #ffffff;
+    color: #000;
+    outline: none;
+}
+
+.find-blog {
+    border: none;
+    outline: none;
+    background-color: #C8C8C8;
+    height: 3.7vh;
+    width: 70%;
+    margin-top: 2vh;
+    margin-left: 14%;
+    border-radius: 30px;
+}
+
+.user-section-info input{
+    padding-left: 9%;
+}
+
+.separate-line-1 {
+    margin-top: 2vh;
+    width: 18vw;
+    margin-left: 9%;
+}
+
+.recent-post {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+
+.recent-post p {
+    background-color: #D9D9D9;
+    padding-top: 1.2vh;
+}
+
+.line-2{
+    margin-top: 10%;
+}
+
+.more-info-post {
+    background-color: #D9D9D9;
+    margin-top: 4vh;
+}
+
+.post-info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #D9D9D9;
+    margin-left: 2vh;
+    margin-top: 2vh;
+}
+
+.post-info p{
+    background-color: #D9D9D9;
+    margin-left: 3%;
+}
+
+.post-info img{
+    background-color: #D9D9D9;
+}
+
+.blog-post-info {
+    height: 54vh;
+    width: 70%;
+    background-color: #D9D9D9;
+    margin-left: 2vw;
+    margin-top: 6vh;
+}
+
+.name-profile {
+    display: flex;
+    padding: 4vh;
+    background-color: #D9D9D9;
+}
