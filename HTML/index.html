@@ -55,70 +55,45 @@
                     </div>
                 </div>
             </aside>
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <div class="blog-post-info card">
-                    <div class="name-profile">
-                        <img src="../IMG/user-icon.svg" height="36" alt="">
-                        <div class="time-name">
-                            <p>Avinash Padale</p>
-                            <p>16h ago, Aug 25, 2023</p>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <p class="card-content">
-                            Code Chronicles: Navigating the World of Computer Engineering
-                        </p>
-                    </div>
-                </div>
-
-                <div class="blog-post-info card">
-                    <div class="name-profile">
-                        <img src="../IMG/user-icon.svg" height="36" alt="">
-                        <div class="time-name">
-                            <p>Avinash Padale</p>
-                            <p>16h ago, Aug 25, 2023</p>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <p class="card-content">
-                            Code Chronicles: Navigating the World of Computer Engineering
-                        </p>
-                    </div>
-                </div>
-
-                <div class="blog-post-info card">
-                    <div class="name-profile">
-                        <img src="../IMG/user-icon.svg" height="36" alt="">
-                        <div class="time-name">
-                            <p>Avinash Padale</p>
-                            <p>16h ago, Aug 25, 2023</p>
-                        </div>
-                    </div>
-                    <div class="blog-card">
-                        <p class="card-content">
-                            Code Chronicles: Navigating the World of Computer Engineering
-                        </p>
-                    </div>
-                </div>
-
+            <div id="blog-container" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                <!-- Blog posts will be dynamically added here -->
             </div>
         </div>
     </main>
 
-    <div class="overlay" id="overlay" onclick="closeModal"></div>
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
     <div class="modal" id="modal">
         <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
             <h2>Enter Detail of your Blog</h2>
             <button class="close-button" onclick="closeModal()">Close</button>
         </div>
-        <input type="text" class="modal-input" placeholder="Blog Title">
+        <input id="blogTitle" type="text" class="modal-input" placeholder="Blog Title">
         <textarea class="modal-input" id="modal-body" placeholder="Blog Body"></textarea>
+
+        <div class="radio-group">
+            <label for="radioOption">Do you want to make this Blog Public or Private?</label>
+            <div style="width: 35%; display: flex; flex-direction: row; justify-content: space-evenly;">
+                <div class="radio-option">
+                    <input type="radio" id="radioOption1" name="visibility" value="public">
+                    <label for="radioOption1">Public</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="radioOption2" name="visibility" value="private">
+                    <label for="radioOption2">Private</label>
+                </div>
+            </div>
+        </div>
+
         <div style="display: flex; justify-content: center; align-items: center;">
             <button class="submit-button" onclick="submitForm()">Submit</button>
         </div>
     </div>
 
     <script src="../JS/index.js"></script>
+    <script>
+        // Function to display blog posts on page load
+        document.addEventListener("DOMContentLoaded", displayBlogPosts);
+    </script>
 </body>
 
 </html>

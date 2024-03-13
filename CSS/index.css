@@ -293,7 +293,7 @@
 }
 
 #modal-body{
-    height: 50vh;
+    height: 43vh;
 }
 
 /* Hover effect for better user experience */
@@ -375,4 +375,25 @@
 .card-content {
     line-height: 1.6;
     margin: 3vw;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
 }
