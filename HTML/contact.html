@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us Page</title>
+    <title>Contact-Us</title>
     <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <div class="NavBar">
@@ -19,7 +21,7 @@
         </div>
         
         <div class="SearchBar">
-            <input type="text" id="usernameInput" class="textInput" placeholder="Search Post here">
+            <input type="text" id="postname" class="textInput" placeholder="Search Post here">
         </div>
         <!--------------- other tabs --------->
         <div class="tabs">
@@ -39,11 +41,40 @@
         </div>
     </div>
     <!-- mainbody -->
+    <div class="MainBody">
+        <section class="Contact-us">
+        <h1>Contact Us</h1>
+        <div class="ContactHome">
+            <div class="leftpanel">   
+                <h3>Reach Us</h3>
+                    <p><span><i class="fas fa-map-marker-alt"></i></span> <b>Address:</b> <p>Ashok Nagar, Tathawade, Pune, 411033</p></p>
+                    <p><span><i class="far fa-envelope"></i></span> <b>Email:</b><p> thoughtforge@gmail.com</p></p>
+                    <p><span><i class="fas fa-phone"></i></span> <b>Phone:</b><p>+91 7937923294</p></p>
+                </div>
+            <div class="rightpanel">
+                <h3>Send Message</h3>
+                <form action="mailto:thoughtforge@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="Full Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+                    <textarea name="Message" class="msg" placeholder="Message" required></textarea>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+            </div>
+        </div>
+        </section>
+    </div>
 
 
 
 
     <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+          <img src="../IMG/Vector_top_left.svg" alt="img" height="50px" width="50px">
+          <h2>ThoughtForge</h2>
+        </div>
+      </footer>
       
 </body>
 </html>
