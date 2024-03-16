@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>ThoughtForge</title>
+    <link rel="stylesheet" href="../CSS/index.css">
 </head>
+
 <body>
-    <h1>ThoughtForge</h1>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../IMG/Vector_top_left.svg" height="50" width="68" alt="Blog-Logo">
+        </div>
+        <div class="blog-website-name">
+            <h1>ThoughtForge</h1>
+        </div>
+        <div class="search-bar">
+            <img src="../IMG/search-icon.svg" height="15" width="13.1">
+            <input type="text" placeholder="Search Post" value="">
+        </div>
+
+        <h2 class="contact">Contact</h2>
+        <h2 class="about">About</h2>
+        <div class="toggle-container">
+            <label class="toggle-switch">
+                <input type="checkbox">
+                <span class="toggle-slider"></span>
+            </label>
+        </div>
+        <img id="user-icon" src="../IMG/user-icon.svg" height="40" alt="">
+    </nav>
+
+    <hr class="separate-line">
+    <main>
+        <div class="hero-section">
+            <aside class="user-section-info">
+                <div class="user-profile-name">
+                    <img src="../IMG/user-icon.svg" height="55" alt="">
+                    <h1>Shubham Asbe</h1>
+                </div>
+                <button class="new-btn" onclick="openModal()">New</button>
+                <input type="text" placeholder="Find a Blog" class="find-blog">
+                <hr class="separate-line-1">
+                <div class="recent-post">
+                    <p>Recent Post</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <hr class="separate-line-1 line-2">
+                <div class="more-info-post">
+                    <div class="post post-info">
+                        <img src="../IMG/blog-post.png" height="28" alt="">
+                        <p>Post</p>
+                    </div>
+                </div>
+            </aside>
+            <div id="blog-container" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                <!-- Blog posts will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
+    <div class="modal" id="modal">
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px;">
+            <h2>Enter Detail of your Blog</h2>
+            <button class="close-button" onclick="closeModal()">Close</button>
+        </div>
+        <input id="blogTitle" type="text" class="modal-input" placeholder="Blog Title">
+        <textarea class="modal-input" id="modal-body" placeholder="Blog Body"></textarea>
+
+        <div class="radio-group">
+            <label for="radioOption">Do you want to make this Blog Public or Private?</label>
+            <div style="width: 35%; display: flex; flex-direction: row; justify-content: space-evenly;">
+                <div class="radio-option">
+                    <input type="radio" id="radioOption1" name="visibility" value="public">
+                    <label for="radioOption1">Public</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="radioOption2" name="visibility" value="private">
+                    <label for="radioOption2">Private</label>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <button class="submit-button" onclick="submitForm()">Submit</button>
+        </div>
+    </div>
+
+    <script src="../JS/index.js"></script>
+    <script>
+        // Function to display blog posts on page load
+        document.addEventListener("DOMContentLoaded", displayBlogPosts);
+    </script>
 </body>
+
 </html>
