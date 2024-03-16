@@ -1,6 +1,6 @@
 body,
 html {
-  overflow: scroll;
+  overflow: auto;
   margin: 0;
   font-family: "Times New Roman", Times, serif;
 }
@@ -146,8 +146,120 @@ input:checked + .slider:before {
 }
 /**************************** main body ******************************/
 
+.MainBody {
+  margin: 80px;
+  place-items: center;
+  display: flex;
+  background-image: url(../IMG/SVGLIGHT.svg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 30%;
+  background-position: center;
+}
+.Contact-us {
+  margin-top: 2%;
+  height: 80%;
+  width: 100%;
+  padding: 2% 5%;
+  border-radius: 5px;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+}
+.Contact-us h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: -1%;
+}
+.ContactHome {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+.leftpanel {
+  padding: 5%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+  width: 40%;
+  margin: 4%;
+}
+.leftpanel p span {
+  margin-right: 10px;
+}
+.leftpanel p {
+  width: 200px;
+  padding-bottom: 1%;
+}
+.rightpanel {
+  margin: 4%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  flex-direction: column;
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2);
+}
 
+/************* InputFeild ************/
+.rightpanel input {
+  width: 100%;
+  margin-bottom: 5%;
+  height: 0.2vw; /* Reduce the height of the input box */
+  padding: 1vw; /* Add padding for better appearance */
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+.rightpanel textarea {
+  width: 100%;
+  margin-bottom: 5%;
+  padding: 1vw; /* Adjust padding as needed */
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+.button {
+  display: inline-block;
+  margin-top: 5%;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4d555d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px #999;
+}
 
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
+/****************************************/
 
 /**************************** footer ******************************/
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  /* Adjust the height of the footer as needed */
+}
+
+.footer-content {
+  text-align: center; /* Center text horizontally */
+}
+
+.footer img {
+  margin-bottom: -10%; /* Adjust the spacing between the image and text */
+}
